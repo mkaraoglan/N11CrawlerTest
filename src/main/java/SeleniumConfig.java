@@ -7,7 +7,7 @@ public class SeleniumConfig {
 
 
     public SeleniumConfig() {
-        System.setProperty("webdriver.chrome.driver","bin/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }

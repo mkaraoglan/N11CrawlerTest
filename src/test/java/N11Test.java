@@ -10,6 +10,7 @@ public class N11Test {
     private String email = "mktestdeneme@gmail.com";
     private String password = "MK123456";
     private String webSite = "https://www.n11.com/";
+    private String searchProduct = "samsung";
 
     private N11Crawler n11Crawler;
     private SeleniumConfig config;
@@ -17,7 +18,7 @@ public class N11Test {
     @Before
     public void setUp(){
         config = new SeleniumConfig();
-        n11Crawler = new N11Crawler(config, webSite, email, password);
+        n11Crawler = new N11Crawler(config, webSite, email, password, searchProduct);
     }
 
     @Test
